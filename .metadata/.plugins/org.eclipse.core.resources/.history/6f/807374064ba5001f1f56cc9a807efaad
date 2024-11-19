@@ -1,0 +1,26 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("학생 몇명 >> ");
+		int num = sc.nextInt();
+
+		int[] datas = new int[num];
+
+		for (int i = 0; i < num; i++) {
+			System.out.println("점수 >> ");
+			int score = sc.nextInt();
+			datas[i] = score;
+		}
+
+		for (int i=0;i<datas.length;i++) {
+			System.out.print(datas[i]+" ");
+		}
+
+
+	}
+}
