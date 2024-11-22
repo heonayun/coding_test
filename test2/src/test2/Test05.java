@@ -1,8 +1,8 @@
-package test;
+package test2;
 
 import java.util.Scanner;
 
-public class Test04 {
+public class Test05 {
 
 	public static void main(String[] args) {
 		// N 개의 탑
@@ -19,22 +19,21 @@ public class Test04 {
 		for (int i = 0; i < datas.length; i++) {
 			datas[i] = sc.nextInt();
 		}
-		System.out.println("datas.length : "+datas.length);
+		System.out.println("datas.length : " + datas.length);
 
-		// datas[i]가 datas[i-1]보다 작으면 datas[i]=i
-		for(int i=0;i<datas.length;i++) {
-			System.out.println("i : "+i);
-			if(datas[datas.length-1] <= datas[datas.length]) {
+		// datas[i] < datas[i-1]이면, datas[i]=i
+		for (int i = datas.length; i <= 0 ; i--) {
+			System.out.println("i : " + i);
+			if (datas[i] <= datas[i-1]) {
 				System.out.println("i : " + i);
-				datas[i]=i;
-			}
-			else {
-				datas[i]=0;
+				datas[i] = i;
+			} else {
+				datas[i] = 0;
 			}
 		}
-		
+
 		for (int v : datas) {
-			System.out.print(v+" ");
+			System.out.print(v + " ");
 		}
 	}
 
