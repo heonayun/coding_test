@@ -1,7 +1,6 @@
 package test3;
 
 import java.util.Scanner;
-import java.util.Stack;
 
 /*
 머쓱이는 친구들과 369게임을 하고 있습니다. 
